@@ -17,6 +17,26 @@ Last Updated: 2/31/2020
   <link rel="stylesheet" href="index.css">
 </head>
 
+<style>
+  .field {
+    margin-bottom:2em!important;
+  } 
+
+  select {
+    width:80vw;
+  }
+
+  .radio {
+    display:block;
+    padding:0;
+    margin:0;
+  }
+
+  .radio:last-child {
+    margin:.5em 0 0 0;
+  }
+</style>
+
 
 <body>
 
@@ -44,6 +64,63 @@ Last Updated: 2/31/2020
         <input class="input" type="text" placeholder="Text input">
       </div>
     </div>
+
+    <div class="field">
+      <label class="label">Last Name <item class="required">*</item></label>
+      <div class="control">
+        <input class="input" type="text" placeholder="Text input">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Suffix</label>
+      <div class="control">
+        <div class="select">
+          <select>
+            <option>Choose an option</option>
+            <option>Jr.</option>
+            <option>Sr.</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="field">
+      <label class="label">Preferred Name</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="Text input">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Biological Sex <item class="required">*</item></label>
+      <div class="control">
+        <label class="radio">
+          <input type="radio" name="question">
+          Male
+        </label>
+        <label class="radio">
+        <input type="radio" name="question">
+        Female
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Suffix</label>
+      <div class="control">
+        <div class="select">
+          <select>
+            <option>Gender Identity <item class="required">*</item></option>
+            <option>Jr.</option>
+            <option>Sr.</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+  
     
 
 
