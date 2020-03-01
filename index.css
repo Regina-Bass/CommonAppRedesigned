@@ -20,12 +20,12 @@ nav {
     font-family: 'Karla' ;
     display:grid;
     background:#30345B;
-    padding:1em 0 .5em 0;
+    padding:1em 0 0 0;
     width:100vw;
     height:6em;
     position:fixed;
     z-index:2;
-    margin-top:-6.5em;
+    top:0;
     grid-template-columns:30vw 50vw;
 }
   
