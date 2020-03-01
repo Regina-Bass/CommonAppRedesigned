@@ -24,7 +24,7 @@ nav {
     width:100vw;
     height:6em;
     position:fixed;
-    z-index:1;
+    z-index:2;
     margin-top:-6em;
     grid-template-columns:30vw 50vw;
 }
