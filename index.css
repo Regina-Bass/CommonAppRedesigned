@@ -1,10 +1,9 @@
 body {
-    background:#F1F1F1;
+    background:#F1F1F1!important;
     font-family: 'Lato';
     color:#2b2b2b;
-    margin:0;
-    padding:0;
-    height:80rem;
+    margin:0!important;
+    padding:0!important;
     font-size:1.4em;
     line-height:180%;
     -moz-osx-font-smoothing:grayscale;
@@ -21,24 +20,27 @@ nav {
     font-family: 'Karla' ;
     display:grid;
     background:#30345B;
-    padding:1em 0;
-    line-height: 2;
+    padding:1em 0 .5em 0;
     width:100vw;
+    height:6em;
+    position:fixed;
+    z-index:1;
+    margin-top:-6em;
     grid-template-columns:30vw 50vw;
 }
   
-#logo {
+#logo{
     margin-left:20vw;
-    line-height:98.22px;
-    height:98.22px;
+    font-weight:700;
+}
+
+#logo a {
+    color:#fff;
 }
   
 #links {
     text-transform:uppercase;
     text-align:right;
-    ine-height:98.22px;
-    height:98.22px;
-    vertical-align:center;
 }
 
 #links a {
@@ -49,11 +51,35 @@ nav {
     vertical-align:center;
 }
 
+#links a:last-child {
+    margin-right:0em;
+}
+
+.questionTitle {
+    font-family:'Karla';
+    font-weight:700;
+    font-size:1.5em;
+    padding-bottom:.6em;
+    margin-bottom:1.5em;
+    border-bottom:1px solid #646464;
+}
+
 #wrapper {
     width:80vw;
     margin:10vw auto 0 auto;
+    padding:7em 0 5em 0;
     background:#F1F1F1;
     width:100vh;
+    height:auto;    
+
+}
+
+#questionCont {
+    background:#fff;
+    padding:2em 2em 5em 2em;
+    margin-bottom:5em;
+    border-radius:.5em;
+    box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1px 2px 0 #B3B3B3;
 }
 
 .required {
@@ -63,3 +89,33 @@ nav {
 .question {
     display:inline-block;
 }
+
+.moreInfo {
+    font-size:.6em;
+    color:#646464;
+    margin:-1.5em 0 .7em 0;
+}
+
+.contButton {
+    font-family:'Karla';
+    color:#fff;
+    font-weight:700;
+    font-size:.9em;
+    text-transform:uppercase;
+    border-radius:7em;
+    padding:.5em 1.2em;
+    float:right;
+    background:#30345B;
+}
+
+.contButton:hover {
+    color:#fff;
+}
+
+.autoSave {
+    text-align:center;
+    font-weight:700;
+    font-family:'Karla';
+    font-size:.9em;
+}
+
